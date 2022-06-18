@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>The Kit Store - Home</title>
+</head>
+<body>
+    <center>
+<h1 >The Kit Store</h1>
+</center>
+
+<div class="topnav">
+    <a href="index.html">Home</a>
+    <a href="About.html">About Us</a>
+  </div>
+
+    <main>
+    <table class = 'customerInterface' cellpadding = '25px'>
+        <form id="checkout">
+        <tr>
+            <td>Name : </td>
+            <td> <input type="text" name="" id="customerName" class="inputVal"></td>
+            <td id = 'item1TextName'> Ac Milan Home Kit ($300): </td>
+            <td> <input type="number" name="" id="item1" class="inputVal"></td>
+        </tr>
+        <tr>
+            <td>Phone : </td>
+            <td> <input type="text" name="" id="customerPhone" class="inputVal" maxlength="10"></td>
+            <td id = 'item2TextName'> Liverpool Home Kit ($200): </td>
+            <td> <input type="number" name="" id="item2" class="inputVal"></td>
+        </tr>
+        <tr>
+            <td>Credit Card Number : </td>
+            <td> <input type="text" name="" id="customerCardNumber" class="inputVal" onkeypress='return formats(this,event)' onkeyup="return numberValidation(event)" maxlength="24"></td>
+            <td id = 'item3TextName'> Man-City Home Kit ($5): </td>
+            <td> <input type="number" name="" id="item3" class="inputVal"></td>
+        </tr>
+        <tr>
+            <td>Credit Card Expiry Month : </td>
+            <td> <input type="text" name="" id="customerCardExpiryMonth" class="inputVal" maxlength="2"></td>
+            <td id = 'item4TextName'> Real Madrid Third Kit ($50): </td>
+            <td> <input type="number" name="" id="item4" class="inputVal"></td>
+        </tr>
+        <tr>
+            <td>Credit Card Expiry Year : </td>
+            <td> <input type="text" name="" id="customerCardExpiryYear" class="inputVal" maxlength="4"></td>
+            <td id = 'item5TextName'> Inter Milan Away Kit ($30): </td>
+            <td> <input type="number" name="" id="item5" class="inputVal"></td>
+        </tr>
+        <tr>
+             <td colspan = '4'> <input type="submit" value="Checkout" class = 'buttonSubmit'></td>
+        </tr>
+        <tr>
+            
+            <td colspan = '4' id="error"></td>
+            
+        </tr>
+    </form>
+    </table>
+</main>
+    <center><h1>Receipt</h1></center>
+<main id = 'receiptInforormation'>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

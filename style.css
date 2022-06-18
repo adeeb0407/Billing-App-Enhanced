@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+body{
+  font-family: 'Ubuntu', sans-serif;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border: 3px solid black;
+    border-radius: 5px;
+    box-shadow: 10px 10px 5px grey;
+    margin: 10px 20% 10px 20%;
+}
+
+.customerInterface{
+    padding: 20px;
+}
+.inputVal{
+    border-radius: 5px;
+    height: 30px;
+}
+.buttonSubmit{
+    background-color: black;
+    font-size: 1.3rem;
+    width: 100%;
+    border-radius: 10px;
+    height: 100%;
+    color: aliceblue;
+    padding : 10px;
+    cursor: pointer;
+}
+#error{
+    color: red;
+}
+#tableText{
+    text-align: end;
+}
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  /* Style for topnav links */
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* color on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
